@@ -346,7 +346,7 @@ b4064f0698be   cybertriage-mcp-server:latest   "python cybertriage_…"   1 seco
 ### Commands Executed
 ```bash
 cd /workspace/cybertriage-mcp/mcp-client
-export GOOGLE_API_KEY='AIzaSyDmVEj7aAWKpdzCQu1NDAjgG275TM6UGQk'
+export GOOGLE_API_KEY='AIza'
 export OPENAI_API_KEY='sk-proj-...'
 python cybertriage_llm_client.py --provider auto
 ```
