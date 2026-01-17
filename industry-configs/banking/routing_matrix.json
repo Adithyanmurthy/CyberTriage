@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "CARD_FRAUD": {"primary_assignee": "Card Fraud Team", "secondary_assignee": "Branch Manager", "jurisdiction": "Card Operations", "escalation_path": ["Fraud Manager", "CRO"], "notes": "Block card immediately"},
+    "ACCOUNT_TAKEOVER": {"primary_assignee": "Cyber Security Team", "secondary_assignee": "Account Services", "jurisdiction": "Information Security", "escalation_path": ["CISO", "Law Enforcement"], "notes": "Reset credentials"},
+    "WIRE_FRAUD": {"primary_assignee": "Wire Transfer Operations", "secondary_assignee": "Compliance", "jurisdiction": "Treasury", "escalation_path": ["Treasury Head", "CFO"], "notes": "Initiate SWIFT recall"},
+    "MOBILE_BANKING": {"primary_assignee": "Digital Banking Team", "secondary_assignee": "Cyber Security", "jurisdiction": "Digital Channels", "escalation_path": ["Digital Head", "NPCI"], "notes": "Disable mobile banking"},
+    "OTHER": {"primary_assignee": "General Fraud Team", "secondary_assignee": "Customer Service", "jurisdiction": "Operations", "escalation_path": ["Operations Manager"], "notes": "Assess and reclassify"}
+  },
+  "amount_thresholds": {"branch_level": 100000, "regional_level": 1000000, "head_office_level": 10000000}
+}

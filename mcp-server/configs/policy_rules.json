@@ -1,0 +1,16 @@
+{
+  "policies": [
+    {"id": "POL001", "name": "Critical Digital Arrest Dual Routing", "condition": {"severity": "CRITICAL", "category": "DIGITAL_ARREST"}, "action": "dual_routing", "description": "Route to both Cyber Cell and Bank Nodal Officer", "priority": 1},
+    {"id": "POL002", "name": "High Amount Bank Freeze", "condition": {"amount_gte": 100000}, "action": "bank_freeze_recommendation", "description": "Recommend immediate bank account freeze", "priority": 2},
+    {"id": "POL003", "name": "Vulnerable Victim Escalation", "condition": {"victim_flag_present": true}, "action": "victim_escalation", "description": "Auto-escalate for vulnerable victims", "priority": 3},
+    {"id": "POL004", "name": "Evidence Cold Warning", "condition": {"time_since_hours_gte": 72}, "action": "evidence_cold_warning", "description": "Evidence may be degraded", "priority": 4},
+    {"id": "POL005", "name": "Golden Hour Alert", "condition": {"golden_hour": true}, "action": "golden_hour_alert", "description": "Trigger golden hour protocol", "priority": 1}
+  ],
+  "action_messages": {
+    "dual_routing": "Case routed to both Cyber Cell and Bank Nodal Officer",
+    "bank_freeze_recommendation": "URGENT: Initiate bank account freeze immediately",
+    "victim_escalation": "Severity escalated due to vulnerable victim",
+    "evidence_cold_warning": "WARNING: Evidence may be degraded",
+    "golden_hour_alert": "GOLDEN HOUR ACTIVE: Prioritize for immediate action"
+  }
+}

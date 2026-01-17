@@ -1,0 +1,10 @@
+{
+  "domain": "cyber_fraud",
+  "label": "Cyber Fraud Triage",
+  "version": "1.0.0",
+  "description": "Intelligent intake and triage system for cyber fraud complaints in India",
+  "regulatory_alignment": ["RBI Guidelines", "CERT-In Framework", "IT Act 2000"],
+  "supported_channels": ["web_form", "whatsapp", "helpline_1930", "mobile_app"],
+  "currency": "INR",
+  "country": "India"
+}

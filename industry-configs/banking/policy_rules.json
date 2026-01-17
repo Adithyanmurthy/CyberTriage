@@ -1,0 +1,12 @@
+{
+  "policies": [
+    {"id": "BANK001", "name": "Critical Wire Fraud", "condition": {"severity": "CRITICAL", "category": "WIRE_FRAUD"}, "action": "immediate_escalation", "description": "Escalate to Treasury", "priority": 1},
+    {"id": "BANK002", "name": "High Value Alert", "condition": {"amount_gte": 1000000}, "action": "senior_management_notification", "description": "Notify senior management", "priority": 1},
+    {"id": "BANK003", "name": "Golden Hour Banking", "condition": {"golden_hour": true}, "action": "golden_hour_banking", "description": "Activate rapid response", "priority": 1}
+  ],
+  "action_messages": {
+    "immediate_escalation": "URGENT: Escalated to senior management",
+    "senior_management_notification": "High-value fraud alert sent",
+    "golden_hour_banking": "Golden hour protocol activated"
+  }
+}

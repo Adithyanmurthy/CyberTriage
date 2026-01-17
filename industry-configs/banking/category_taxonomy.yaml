@@ -1,0 +1,49 @@
+# Banking Industry - Fraud Category Taxonomy
+
+categories:
+  - id: CARD_FRAUD
+    name: Credit/Debit Card Fraud
+    keywords:
+      - credit card
+      - debit card
+      - card skimming
+      - atm fraud
+      - card cloning
+      - unauthorized transaction
+    risk_score: 85
+
+  - id: ACCOUNT_TAKEOVER
+    name: Account Takeover
+    keywords:
+      - account hacked
+      - password changed
+      - unauthorized access
+      - login from unknown device
+      - phishing
+    risk_score: 90
+
+  - id: WIRE_FRAUD
+    name: Wire Transfer Fraud
+    keywords:
+      - wire transfer
+      - neft
+      - rtgs
+      - imps
+      - unauthorized transfer
+    risk_score: 95
+
+  - id: MOBILE_BANKING
+    name: Mobile Banking Fraud
+    keywords:
+      - mobile banking
+      - upi fraud
+      - phonepe
+      - google pay
+      - paytm
+      - qr code scam
+    risk_score: 80
+
+  - id: OTHER
+    name: Other Banking Fraud
+    keywords: []
+    risk_score: 50

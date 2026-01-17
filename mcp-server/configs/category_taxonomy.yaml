@@ -1,0 +1,89 @@
+categories:
+  - id: DIGITAL_ARREST
+    name: Digital Arrest Scam
+    keywords:
+      - digital arrest
+      - cbi officer
+      - police officer
+      - customs officer
+      - enforcement directorate
+      - money laundering
+      - arrest warrant
+      - court order
+      - fake police
+    risk_score: 90
+  - id: INVESTMENT_FRAUD
+    name: Investment/Trading Fraud
+    keywords:
+      - investment
+      - trading
+      - stock market
+      - crypto
+      - bitcoin
+      - guaranteed returns
+      - double money
+      - high returns
+    risk_score: 85
+  - id: UPI_FRAUD
+    name: UPI/Payment Fraud
+    keywords:
+      - upi
+      - phonepe
+      - google pay
+      - gpay
+      - paytm
+      - qr code
+      - payment link
+      - collect request
+    risk_score: 70
+  - id: OTP_SCAM
+    name: OTP/Phishing Scam
+    keywords:
+      - otp
+      - one time password
+      - bank otp
+      - card details
+      - cvv
+      - pin number
+      - phishing
+      - kyc update
+    risk_score: 75
+  - id: LOAN_APP
+    name: Loan App Harassment
+    keywords:
+      - loan app
+      - instant loan
+      - harassment
+      - morphed photos
+      - threatening
+    risk_score: 80
+  - id: REMOTE_APP
+    name: Remote Access Scam
+    keywords:
+      - anydesk
+      - teamviewer
+      - remote access
+      - screen sharing
+      - tech support
+    risk_score: 85
+  - id: JOB_FRAUD
+    name: Job/Employment Fraud
+    keywords:
+      - job offer
+      - work from home
+      - part time job
+      - registration fee
+    risk_score: 65
+  - id: ECOMMERCE_FRAUD
+    name: E-commerce Fraud
+    keywords:
+      - online shopping
+      - fake product
+      - empty box
+      - no delivery
+      - olx
+    risk_score: 55
+  - id: OTHER
+    name: Other Cybercrime
+    keywords: []
+    risk_score: 40

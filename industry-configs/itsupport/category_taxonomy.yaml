@@ -1,0 +1,74 @@
+# IT Support - Ticket Category Taxonomy
+
+categories:
+  - id: SYSTEM_OUTAGE
+    name: System Outage
+    keywords:
+      - system down
+      - outage
+      - server down
+      - application down
+      - service unavailable
+    risk_score: 95
+
+  - id: SECURITY_INCIDENT
+    name: Security Incident
+    keywords:
+      - security
+      - breach
+      - hack
+      - malware
+      - virus
+      - ransomware
+      - phishing
+    risk_score: 95
+
+  - id: NETWORK_ISSUE
+    name: Network Issue
+    keywords:
+      - network
+      - connectivity
+      - vpn
+      - wifi
+      - internet
+      - slow connection
+    risk_score: 70
+
+  - id: HARDWARE_FAILURE
+    name: Hardware Failure
+    keywords:
+      - hardware
+      - laptop
+      - desktop
+      - monitor
+      - printer
+      - broken
+    risk_score: 60
+
+  - id: SOFTWARE_ISSUE
+    name: Software Issue
+    keywords:
+      - software
+      - application
+      - install
+      - update
+      - license
+      - error
+      - bug
+    risk_score: 50
+
+  - id: ACCESS_REQUEST
+    name: Access Request
+    keywords:
+      - access
+      - permission
+      - login
+      - password reset
+      - account
+      - unlock
+    risk_score: 40
+
+  - id: OTHER
+    name: General IT Request
+    keywords: []
+    risk_score: 30

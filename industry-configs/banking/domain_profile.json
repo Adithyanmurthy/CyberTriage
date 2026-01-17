@@ -1,0 +1,12 @@
+{
+  "domain": "banking",
+  "label": "Banking Fraud Complaint Intake & Triage",
+  "description": "Intelligent intake and triage system for banking and financial fraud complaints",
+  "version": "1.0.0",
+  "industry": "banking",
+  "regulatory_body": "RBI",
+  "sla_unit": "hours",
+  "currency": "INR",
+  "golden_hour_enabled": true,
+  "golden_hour_hours": 24
+}

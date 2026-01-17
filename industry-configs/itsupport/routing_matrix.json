@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "SYSTEM_OUTAGE": {"primary_assignee": "SRE Team", "secondary_assignee": "App Support", "jurisdiction": "Infrastructure", "escalation_path": ["SRE Lead", "CTO"], "notes": "Start incident response"},
+    "SECURITY_INCIDENT": {"primary_assignee": "SOC", "secondary_assignee": "IT Security", "jurisdiction": "InfoSec", "escalation_path": ["Security Lead", "CISO"], "notes": "Isolate affected systems"},
+    "NETWORK_ISSUE": {"primary_assignee": "Network Ops", "secondary_assignee": "Help Desk", "jurisdiction": "Network Team", "escalation_path": ["Network Lead"], "notes": "Check monitoring tools"},
+    "HARDWARE_FAILURE": {"primary_assignee": "Desktop Support", "secondary_assignee": "Asset Mgmt", "jurisdiction": "End User Computing", "escalation_path": ["Desktop Lead"], "notes": "Check warranty"},
+    "SOFTWARE_ISSUE": {"primary_assignee": "App Support", "secondary_assignee": "Help Desk", "jurisdiction": "Applications", "escalation_path": ["App Lead"], "notes": "Check known issues"},
+    "ACCESS_REQUEST": {"primary_assignee": "IAM Team", "secondary_assignee": "Help Desk", "jurisdiction": "IAM", "escalation_path": ["IAM Lead"], "notes": "Verify approval"},
+    "OTHER": {"primary_assignee": "Help Desk", "secondary_assignee": "IT Support", "jurisdiction": "General", "escalation_path": ["Help Desk Lead"], "notes": "Triage and reassign"}
+  },
+  "amount_thresholds": {"help_desk": 0, "specialist": 50, "management": 80}
+}

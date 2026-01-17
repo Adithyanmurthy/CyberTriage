@@ -1,0 +1,9 @@
+{
+  "domain": "itsupport",
+  "label": "IT Support Ticket Intake & Triage",
+  "description": "Intelligent intake and triage system for IT support tickets",
+  "version": "1.0.0",
+  "industry": "technology",
+  "sla_unit": "hours",
+  "priority_levels": ["P1", "P2", "P3", "P4"]
+}

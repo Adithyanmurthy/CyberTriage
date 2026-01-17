@@ -1,0 +1,13 @@
+{
+  "bands": {
+    "CRITICAL": {"min_score": 80, "sla_hours": 1, "description": "Immediate action required"},
+    "HIGH": {"min_score": 60, "sla_hours": 4, "description": "Urgent attention needed"},
+    "MEDIUM": {"min_score": 40, "sla_hours": 24, "description": "Standard processing"},
+    "LOW": {"min_score": 0, "sla_hours": 72, "description": "Routine handling"}
+  },
+  "weights": {"amount": 0.30, "time_since_hours": 0.25, "type_risk": 0.25, "victim_priority": 0.20},
+  "golden_hour_hours": 24,
+  "amount_saturation_inr": 1000000,
+  "victim_flags": ["senior citizen", "elderly", "pensioner", "nri", "high net worth"],
+  "golden_hour_recommendations": ["Immediately freeze the affected account", "Contact correspondent bank", "File SAR"]
+}

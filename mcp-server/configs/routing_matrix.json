@@ -1,0 +1,14 @@
+{
+  "routes": {
+    "DIGITAL_ARREST": {"primary_assignee": "Cyber Crime Cell", "secondary_assignee": "Bank Nodal Officer", "jurisdiction": "State Cyber Cell", "escalation_path": ["District SP", "State Cyber Head", "CBI Cyber"], "notes": "High-priority impersonation case"},
+    "INVESTMENT_FRAUD": {"primary_assignee": "Economic Offences Wing", "secondary_assignee": "Cyber Crime Cell", "jurisdiction": "EOW / State Cyber", "escalation_path": ["EOW Head", "SEBI", "ED"], "notes": "Check for Ponzi scheme patterns"},
+    "UPI_FRAUD": {"primary_assignee": "Bank Nodal Officer", "secondary_assignee": "Cyber Crime Cell", "jurisdiction": "Bank + Local Cyber", "escalation_path": ["Bank Fraud Team", "NPCI", "RBI Ombudsman"], "notes": "Fast-track through bank nodal"},
+    "OTP_SCAM": {"primary_assignee": "Cyber Crime Cell", "secondary_assignee": "Bank Nodal Officer", "jurisdiction": "State Cyber Cell", "escalation_path": ["Bank Security", "CERT-In"], "notes": "Check for phishing domain"},
+    "LOAN_APP": {"primary_assignee": "Cyber Crime Cell", "secondary_assignee": "RBI Ombudsman", "jurisdiction": "State Cyber + RBI", "escalation_path": ["RBI Digital Lending", "Google Play Store"], "notes": "Document harassment evidence"},
+    "REMOTE_APP": {"primary_assignee": "Cyber Crime Cell", "secondary_assignee": "Bank Nodal Officer", "jurisdiction": "State Cyber Cell", "escalation_path": ["District SP", "State Cyber Head"], "notes": "Check for malware installation"},
+    "JOB_FRAUD": {"primary_assignee": "Cyber Crime Cell", "secondary_assignee": "Labour Department", "jurisdiction": "Local Police + Cyber", "escalation_path": ["District Cyber", "State Cyber"], "notes": "Check job portal for fake listings"},
+    "ECOMMERCE_FRAUD": {"primary_assignee": "Consumer Forum", "secondary_assignee": "Cyber Crime Cell", "jurisdiction": "Consumer Court + Local Police", "escalation_path": ["E-commerce Platform", "Consumer Affairs Ministry"], "notes": "Try platform grievance first"},
+    "OTHER": {"primary_assignee": "Cyber Crime Cell", "secondary_assignee": "Local Police", "jurisdiction": "State Cyber Cell", "escalation_path": ["District Cyber", "State Cyber"], "notes": "General cybercrime"}
+  },
+  "amount_thresholds": {"bank_nodal_priority": 100000, "cyber_cell_mandatory": 1000000, "eow_referral": 5000000}
+}

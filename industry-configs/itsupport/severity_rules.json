@@ -1,0 +1,13 @@
+{
+  "bands": {
+    "CRITICAL": {"min_score": 80, "sla_hours": 1, "description": "P1 - Business critical"},
+    "HIGH": {"min_score": 60, "sla_hours": 4, "description": "P2 - High impact"},
+    "MEDIUM": {"min_score": 40, "sla_hours": 8, "description": "P3 - Moderate impact"},
+    "LOW": {"min_score": 0, "sla_hours": 24, "description": "P4 - Low impact"}
+  },
+  "weights": {"amount": 0.10, "time_since_hours": 0.20, "type_risk": 0.40, "victim_priority": 0.30},
+  "golden_hour_hours": 4,
+  "amount_saturation_inr": 100000,
+  "victim_flags": ["executive", "vip", "ceo", "cto", "director", "production system", "customer facing"],
+  "golden_hour_recommendations": ["Engage on-call engineer", "Start incident bridge call", "Notify stakeholders"]
+}

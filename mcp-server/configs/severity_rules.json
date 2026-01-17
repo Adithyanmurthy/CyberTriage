@@ -1,0 +1,18 @@
+{
+  "bands": {
+    "CRITICAL": {"min_score": 80, "sla_hours": 2, "description": "Immediate action required"},
+    "HIGH": {"min_score": 60, "sla_hours": 12, "description": "Urgent attention needed"},
+    "MEDIUM": {"min_score": 40, "sla_hours": 48, "description": "Standard processing"},
+    "LOW": {"min_score": 0, "sla_hours": 168, "description": "Routine handling"}
+  },
+  "weights": {"amount": 0.25, "time_since_hours": 0.30, "type_risk": 0.25, "victim_priority": 0.20},
+  "golden_hour_hours": 48,
+  "amount_saturation_inr": 500000,
+  "victim_flags": ["senior citizen", "elderly", "pensioner", "student", "minor", "disabled", "widow", "farmer", "life savings"],
+  "golden_hour_recommendations": [
+    "Contact your bank immediately to request freeze on recipient account",
+    "File complaint on cybercrime.gov.in with transaction details",
+    "Preserve all evidence - screenshots, call logs, chat history",
+    "Do not delete any apps or reinstall your device"
+  ]
+}

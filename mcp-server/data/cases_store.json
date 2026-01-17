@@ -1,0 +1,349 @@
+{
+  "cases": {
+    "CYB-20260116-47867D": {
+      "case_id": "CYB-20260116-47867D",
+      "status": "ROUTED",
+      "intake": {
+        "complaint_text": "I received a call from someone claiming to be a CBI officer. They said my Aadhaar is linked to money laundering and I will be arrested. They made me transfer Rs 5,00,000 via NEFT to avoid arrest. This happened 4 hours ago. I am a senior citizen, 68 years old. Please help recover my life savings.",
+        "amount_inr": 500000.0,
+        "time_since_hours": 4.0,
+        "victim_context": "senior citizen, 68 years old, life savings",
+        "channel": "web_form",
+        "timestamp": "2026-01-16T21:25:55.809238",
+        "preliminary_category": {
+          "id": "DIGITAL_ARREST",
+          "name": "Digital Arrest Scam",
+          "matched_keywords": [
+            "cbi officer",
+            "money laundering"
+          ]
+        }
+      },
+      "triage": {
+        "category_id": "DIGITAL_ARREST",
+        "category_name": "Digital Arrest Scam",
+        "matched_keywords": [
+          "cbi officer",
+          "money laundering"
+        ],
+        "urgency_score": 96,
+        "severity": "CRITICAL",
+        "severity_description": "Immediate action required",
+        "sla_hours": 2,
+        "golden_hour": true,
+        "golden_hour_recommendations": [
+          "Contact your bank immediately to request freeze on recipient account",
+          "File complaint on cybercrime.gov.in with transaction details",
+          "Preserve all evidence - screenshots, call logs, chat history",
+          "Do not delete any apps or reinstall your device"
+        ],
+        "victim_flag_present": true,
+        "victim_flags_matched": [
+          "senior citizen",
+          "life savings"
+        ],
+        "decision_trace": {
+          "components": {
+            "amount_score": 100.0,
+            "time_score": 95.83,
+            "type_risk_score": 90,
+            "victim_score": 100
+          },
+          "weights": {
+            "amount": 0.25,
+            "time_since_hours": 0.3,
+            "type_risk": 0.25,
+            "victim_priority": 0.2
+          },
+          "raw_score": 96.25,
+          "final_score": 96,
+          "calculation": "(0.25*100.0) + (0.3*95.8) + (0.25*90) + (0.2*100) = 96.2"
+        },
+        "triage_timestamp": "2026-01-16T21:25:55.882888"
+      },
+      "routing": {
+        "primary_assignee": "Cyber Crime Cell",
+        "secondary_assignee": "Bank Nodal Officer",
+        "jurisdiction": "State Cyber Cell",
+        "escalation_path": [
+          "District SP",
+          "State Cyber Head",
+          "CBI Cyber"
+        ],
+        "routing_notes": [
+          "High-priority impersonation case",
+          "Amount >= 100,000 - Bank Nodal priority"
+        ],
+        "policy_actions": [
+          {
+            "policy_id": "POL001",
+            "policy_name": "Critical Digital Arrest Dual Routing",
+            "action": "dual_routing",
+            "message": "Case routed to both Cyber Cell and Bank Nodal Officer",
+            "priority": 1
+          },
+          {
+            "policy_id": "POL005",
+            "policy_name": "Golden Hour Alert",
+            "action": "golden_hour_alert",
+            "message": "GOLDEN HOUR ACTIVE: Prioritize for immediate action",
+            "priority": 1
+          },
+          {
+            "policy_id": "POL002",
+            "policy_name": "High Amount Bank Freeze",
+            "action": "bank_freeze_recommendation",
+            "message": "URGENT: Initiate bank account freeze immediately",
+            "priority": 2
+          },
+          {
+            "policy_id": "POL003",
+            "policy_name": "Vulnerable Victim Escalation",
+            "action": "victim_escalation",
+            "message": "Severity escalated due to vulnerable victim",
+            "priority": 3
+          }
+        ],
+        "sla_hours": 2,
+        "routing_timestamp": "2026-01-16T21:25:55.917794"
+      }
+    },
+    "CYB-20260116-A96284": {
+      "case_id": "CYB-20260116-A96284",
+      "status": "ROUTED",
+      "intake": {
+        "complaint_text": "I received a call from someone claiming to be a CBI officer. \n        They said my Aadhaar is linked to money laundering and I will be arrested immediately. \n        They made me do a video call and showed fake arrest warrant. Under pressure, I transferred \n        Rs 5,00,000 via NEFT to avoid arrest. This happened just 4 hours ago. I am a senior citizen, \n        68 years old. Please help recover my life savings. The caller ID showed +91-9876543210.",
+        "amount_inr": 500000.0,
+        "time_since_hours": 4.0,
+        "victim_context": "senior citizen, 68 years old, life savings lost",
+        "channel": "web_form",
+        "timestamp": "2026-01-16T23:42:33.388711",
+        "preliminary_category": {
+          "id": "DIGITAL_ARREST",
+          "name": "Digital Arrest Scam",
+          "matched_keywords": [
+            "cbi officer",
+            "money laundering",
+            "arrest warrant"
+          ]
+        }
+      },
+      "triage": {
+        "category_id": "DIGITAL_ARREST",
+        "category_name": "Digital Arrest Scam",
+        "matched_keywords": [
+          "cbi officer",
+          "money laundering",
+          "arrest warrant"
+        ],
+        "urgency_score": 96,
+        "severity": "CRITICAL",
+        "severity_description": "Immediate action required",
+        "sla_hours": 2,
+        "golden_hour": true,
+        "golden_hour_recommendations": [
+          "Contact your bank immediately to request freeze on recipient account",
+          "File complaint on cybercrime.gov.in with transaction details",
+          "Preserve all evidence - screenshots, call logs, chat history",
+          "Do not delete any apps or reinstall your device"
+        ],
+        "victim_flag_present": true,
+        "victim_flags_matched": [
+          "senior citizen",
+          "life savings"
+        ],
+        "decision_trace": {
+          "components": {
+            "amount_score": 100.0,
+            "time_score": 95.83,
+            "type_risk_score": 90,
+            "victim_score": 100
+          },
+          "weights": {
+            "amount": 0.25,
+            "time_since_hours": 0.3,
+            "type_risk": 0.25,
+            "victim_priority": 0.2
+          },
+          "raw_score": 96.25,
+          "final_score": 96,
+          "calculation": "(0.25*100.0) + (0.3*95.8) + (0.25*90) + (0.2*100) = 96.2"
+        },
+        "triage_timestamp": "2026-01-16T23:42:33.463561"
+      },
+      "routing": {
+        "primary_assignee": "Cyber Crime Cell",
+        "secondary_assignee": "Bank Nodal Officer",
+        "jurisdiction": "State Cyber Cell",
+        "escalation_path": [
+          "District SP",
+          "State Cyber Head",
+          "CBI Cyber"
+        ],
+        "routing_notes": [
+          "High-priority impersonation case"
+        ],
+        "policy_actions": [
+          {
+            "policy_id": "POL001",
+            "policy_name": "Critical Digital Arrest Dual Routing",
+            "action": "dual_routing",
+            "message": "Case routed to both Cyber Cell and Bank Nodal Officer",
+            "priority": 1
+          },
+          {
+            "policy_id": "POL005",
+            "policy_name": "Golden Hour Alert",
+            "action": "golden_hour_alert",
+            "message": "GOLDEN HOUR ACTIVE: Prioritize for immediate action",
+            "priority": 1
+          },
+          {
+            "policy_id": "POL002",
+            "policy_name": "High Amount Bank Freeze",
+            "action": "bank_freeze_recommendation",
+            "message": "URGENT: Initiate bank account freeze immediately",
+            "priority": 2
+          },
+          {
+            "policy_id": "POL003",
+            "policy_name": "Vulnerable Victim Escalation",
+            "action": "victim_escalation",
+            "message": "Severity escalated due to vulnerable victim",
+            "priority": 3
+          },
+          {
+            "policy_id": "POL004",
+            "policy_name": "Evidence Cold Warning",
+            "action": "evidence_cold_warning",
+            "message": "WARNING: Evidence may be degraded",
+            "priority": 4
+          }
+        ],
+        "sla_hours": 2,
+        "routing_timestamp": "2026-01-16T23:42:33.472040"
+      }
+    },
+    "CYB-20260116-F3A794": {
+      "case_id": "CYB-20260116-F3A794",
+      "status": "ROUTED",
+      "intake": {
+        "complaint_text": "I received a call from someone claiming to be a CBI officer. \n        They said my Aadhaar is linked to money laundering and I will be arrested immediately. \n        They made me do a video call and showed fake arrest warrant. Under pressure, I transferred \n        Rs 5,00,000 via NEFT to avoid arrest. This happened just 4 hours ago. I am a senior citizen, \n        68 years old. Please help recover my life savings. The caller ID showed +91-9876543210.",
+        "amount_inr": 500000.0,
+        "time_since_hours": 4.0,
+        "victim_context": "senior citizen, 68 years old, life savings lost",
+        "channel": "web_form",
+        "timestamp": "2026-01-16T23:55:41.782743",
+        "preliminary_category": {
+          "id": "DIGITAL_ARREST",
+          "name": "Digital Arrest Scam",
+          "matched_keywords": [
+            "cbi officer",
+            "money laundering",
+            "arrest warrant"
+          ]
+        }
+      },
+      "triage": {
+        "category_id": "DIGITAL_ARREST",
+        "category_name": "Digital Arrest Scam",
+        "matched_keywords": [
+          "cbi officer",
+          "money laundering",
+          "arrest warrant"
+        ],
+        "urgency_score": 96,
+        "severity": "CRITICAL",
+        "severity_description": "Immediate action required",
+        "sla_hours": 2,
+        "golden_hour": true,
+        "golden_hour_recommendations": [
+          "Contact your bank immediately to request freeze on recipient account",
+          "File complaint on cybercrime.gov.in with transaction details",
+          "Preserve all evidence - screenshots, call logs, chat history",
+          "Do not delete any apps or reinstall your device"
+        ],
+        "victim_flag_present": true,
+        "victim_flags_matched": [
+          "senior citizen",
+          "life savings"
+        ],
+        "decision_trace": {
+          "components": {
+            "amount_score": 100.0,
+            "time_score": 95.83,
+            "type_risk_score": 90,
+            "victim_score": 100
+          },
+          "weights": {
+            "amount": 0.25,
+            "time_since_hours": 0.3,
+            "type_risk": 0.25,
+            "victim_priority": 0.2
+          },
+          "raw_score": 96.25,
+          "final_score": 96,
+          "calculation": "(0.25*100.0) + (0.3*95.8) + (0.25*90) + (0.2*100) = 96.2"
+        },
+        "triage_timestamp": "2026-01-16T23:55:41.796072"
+      },
+      "routing": {
+        "primary_assignee": "Cyber Crime Cell",
+        "secondary_assignee": "Bank Nodal Officer",
+        "jurisdiction": "State Cyber Cell",
+        "escalation_path": [
+          "District SP",
+          "State Cyber Head",
+          "CBI Cyber"
+        ],
+        "routing_notes": [
+          "High-priority impersonation case"
+        ],
+        "policy_actions": [
+          {
+            "policy_id": "POL001",
+            "policy_name": "Critical Digital Arrest Dual Routing",
+            "action": "dual_routing",
+            "message": "Case routed to both Cyber Cell and Bank Nodal Officer",
+            "priority": 1
+          },
+          {
+            "policy_id": "POL005",
+            "policy_name": "Golden Hour Alert",
+            "action": "golden_hour_alert",
+            "message": "GOLDEN HOUR ACTIVE: Prioritize for immediate action",
+            "priority": 1
+          },
+          {
+            "policy_id": "POL002",
+            "policy_name": "High Amount Bank Freeze",
+            "action": "bank_freeze_recommendation",
+            "message": "URGENT: Initiate bank account freeze immediately",
+            "priority": 2
+          },
+          {
+            "policy_id": "POL003",
+            "policy_name": "Vulnerable Victim Escalation",
+            "action": "victim_escalation",
+            "message": "Severity escalated due to vulnerable victim",
+            "priority": 3
+          },
+          {
+            "policy_id": "POL004",
+            "policy_name": "Evidence Cold Warning",
+            "action": "evidence_cold_warning",
+            "message": "WARNING: Evidence may be degraded",
+            "priority": 4
+          }
+        ],
+        "sla_hours": 2,
+        "routing_timestamp": "2026-01-16T23:55:41.863991"
+      }
+    }
+  },
+  "metadata": {
+    "created_at": "2026-01-17T00:00:00Z",
+    "last_updated": "2026-01-16T23:55:41.864029",
+    "total_cases": 3
+  }
+}

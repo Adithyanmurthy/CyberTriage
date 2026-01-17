@@ -1,0 +1,31 @@
+# CyberTriage AI - Docker Compose Configuration
+version: '3.8'
+
+services:
+  cybertriage-server:
+    build:
+      context: ./mcp-server
+      dockerfile: Dockerfile
+    container_name: cybertriage-mcp-server
+    ports:
+      - "8000:8000"
+    environment:
+      - PERSIST_MODE=memory
+      - CONFIG_PATH=/app/configs
+      - MCP_HOST=0.0.0.0
+      - MCP_PORT=8000
+      - LOG_LEVEL=INFO
+      - INDUSTRY_PROFILE=cybercrime
+    volumes:
+      - ./mcp-server/configs:/app/configs:ro
+      - cybertriage-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "health_check.py"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+
+volumes:
+  cybertriage-data:

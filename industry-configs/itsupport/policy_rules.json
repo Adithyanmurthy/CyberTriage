@@ -1,0 +1,12 @@
+{
+  "policies": [
+    {"id": "IT001", "name": "System Outage Incident", "condition": {"category": "SYSTEM_OUTAGE"}, "action": "incident_response", "description": "Trigger incident response", "priority": 1},
+    {"id": "IT002", "name": "Security Incident Response", "condition": {"category": "SECURITY_INCIDENT"}, "action": "security_response", "description": "Engage SOC", "priority": 1},
+    {"id": "IT003", "name": "VIP User Priority", "condition": {"victim_flag_present": true}, "action": "vip_escalation", "description": "Escalate for VIP", "priority": 2}
+  ],
+  "action_messages": {
+    "incident_response": "Incident response protocol activated",
+    "security_response": "Security incident response engaged",
+    "vip_escalation": "VIP user - priority escalated"
+  }
+}
